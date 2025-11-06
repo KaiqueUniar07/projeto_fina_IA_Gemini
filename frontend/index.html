@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistente de Viagem com Gemini</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1> Assistente de Viagem</h1>
+        
+
+        <form id="travelForm">
+            <label for="country">País:</label>
+            <input type="text" id="country" name="country" required />
+
+            <label for="city">Cidade:</label>
+            <input type="text" id="city" name="city" required />
+
+            <label for="start_date">Data de Início:</label>
+            <input type="date" id="start_date" name="start_date" required />
+
+            <label for="days">Quantos dias vai viajar?</label>
+            <input type="number" id="days" name="days" min="1" required />
+
+            <label for="preferences">Preferências:</label>
+            <textarea id="preferences" name="preferences" placeholder=""></textarea>
+
+            <button type="submit">Gerar Guia</button>
+        </form>
+
+        <div id="loading" class="hidden"> Gerando guia, aguarde...</div>
+
+        <div id="result" class="hidden">
+            <h2> Guia Turístico </h2>
+            <pre id="guideText"></pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

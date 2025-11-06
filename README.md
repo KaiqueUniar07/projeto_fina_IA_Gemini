@@ -28,6 +28,6 @@ source venv/bin/activate
 ### 3. Instalar as dependências
 pip install -r requirements.txt
 
-
+### 4. Rodar a aplicação
 Executar o servidor
 python main.py
